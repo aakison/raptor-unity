@@ -88,6 +88,8 @@ In addition to this primary use-case, we can also monitor progress using the `Pr
 ## License Info
 
 This software was originally published as RaptorDB at [https://www.codeproject.com/articles/316816/raptordb-the-key-value-store-v2](https://www.codeproject.com/articles/316816/raptordb-the-key-value-store-v2).
-This version has been modified to work with Unity through non-functional 
-changes to the core code (to remove warnings), and to add a wrapper to make 
-consumption from Unity easier.
+This version has been modified to work with Unity through
+* non-functional changes to the core code to remove warnings, 
+* to refactor out unsafe byte array access code, 
+* to replace unsafe version of Murmur hash with https://github.com/sebas77/Murmur3.net
+* and to add a wrapper to make consumption from Unity easier.
